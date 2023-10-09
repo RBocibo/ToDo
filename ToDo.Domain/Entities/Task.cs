@@ -9,5 +9,8 @@ namespace ToDo.Domain.Entities
         public string TaskDescription { get; set; } = null!;
         public PriorityEnum Priority { get; set; }
         public StatusEnum Status { get; set; }
+
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
     }
 }
